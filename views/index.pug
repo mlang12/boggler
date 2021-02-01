@@ -1,0 +1,66 @@
+block content
+  link(rel='stylesheet', href='/formats.css')
+  link(href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  .main-container
+    .row-boggler
+      .wrapper-content
+        h1.display-4.m-b-2 Boggler
+        // Input
+        div.boggler-board
+          div.form-group.row-1
+            input#letter-1.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-2.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-3.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-4.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-5.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-6.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-7.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-8.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-9.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-10.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-11.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-12.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-13.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-14.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-15.boggle-tile(type='text', maxlength='1', placeholder='')
+            input#letter-16.boggle-tile(type='text', maxlength='1', placeholder='')
+        div.button-holder
+          button.btn.btn-primary(id='solve-boggle-trie') Solve - Trie
+          button.btn.btn-primary(id='solve-boggle-std') Solve - Standard
+          button.btn.btn-primary(id='generate-boggle') Generate
+          button.btn.btn-primary(id='clear-boggle') Clear
+        div.option-holder
+          div.check-group
+            input#show-animation.check-boxes(type='checkbox', title='Replay the pattern that was used to solve the board.', value=false)
+            label#show-animation-label.check-boxes-label(for='show-animation', title='Replay the pattern that was used to solve the board.') Show pattern
+          div.check-group
+            input#use-old-dice.check-boxes(type='checkbox', title='Use old style boggle dice to generate the board.', value='Bike')
+            label#use-old-dice-label.check-boxes-label(for='use-old-dice', title='Use old style boggle dice to generate the board.') Old dice
+    .row-solution
+      .wrapper-content
+        div(id='output-area' class='onHide')
+    .row-about
+      .wrapper-content
+        h2.display-4.m-b-2 About
+        .about-box
+          h3.about-title Welcome to the Boggler demo app!
+          | The purpose of this application is to demonstrate the difference between two algorithmic methods of solving a Boggle board.
+          p Don't know what Boggle is? <a href='https://en.wikipedia.org/wiki/Boggle' target='_blank' class='in-text-link'>Check this out first</a>.
+          p Boggler solves Boggle boards. Provide a board, or generate one then click solve to see the solution. Please see the <a href='https://bitbucket.org/mindbrier/bogglesolver/src' target='_blank' class='in-text-link'>readme</a> page to learn more about the two solutions.
+          ul
+            li <b>Solve-Trie</b>: Solves the board by using a Trie data structure. This algorithm navigates the routes and the Trie at the same time resulting in quick response times.
+            li <b>Solve-Standard</b>: Solves the board using a Brute-force method. Finds the dictionary words matching letters in the Boggle board. Then determines if they fall in a valid path. Less responsive.
+          <h4>To use the app:</h4>
+          ul
+            li Click the "Generate" button to populate the 16 spaces of the Boggle board, or enter your own. The application by default will utilize new-style boggle dice. However, there is an option to use <a href='http://www.bananagrammer.com/2013/10/the-boggle-cube-redesign-and-its-effect.html' target='_blank' class='in-text-link'>old style dice</a>.
+            li Click on either "Solve-Trie" or "Solve-Standard" to see the solution to the board.
+            li Clicking "Clear", resets the board.
+            li Check the "Show solve pattern" box, then click either "Solve" button to see a slowed-down animation that reflects the pathing taken by the specific algorithm used to solve the board.
+          p The application uses the  <a href='https://github.com/elasticdog/yawl' target='_blank' class='in-text-link'>YAWL word list</a> as the dictionary. The contents of the word list have not been modified although some words have been excluded in pre-processing due to word length or invalidity of characters.
+          P Source code is <a href='https://bitbucket.org/mindbrier/bogglesolver/src' target='_blank' class='in-text-link'>here</a>. See the readme for a more detailed explanation of my process and what's happening behind the scenes.
+    .footer
+      p <em>Boggle is a registered trademark of Hasbro, with whom Mindbrier is in no way affiliated.</em>
+      h4#fter.footer-area <a href='https://mindbrier.com' target='_blank' class='.footer-area-links'>Mindbrier</a> 2020 <span>&#169;</span>
+  script(src='/index.js')
+          

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+    //   "downlevelIteration": true,
+      "target": "es2015",
+      "lib": [
+        "es6",
+        "es2016.array.include",
+        "es2015.collection",
+        "es2015.iterable"
+    ],
+      "outDir": "dist/"
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+  ]
+}

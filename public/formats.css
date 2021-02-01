@@ -1,0 +1,224 @@
+* {
+  font-family: arial, sans-serif;
+}
+
+html,body {
+  background: #81afe8;
+  background-size: cover;
+  height: 100%;
+}
+
+button,
+.check-group {
+  margin: 10px;
+  font-weight: 700;
+}
+
+.check-group {
+  max-width: 100px;
+  display: inline;
+}
+
+button {
+  width: 42%;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border-style: none;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  min-width: 90px;
+}
+
+.check-boxes {
+  width: 20px;
+  height: 20px;
+}
+
+.form-control {
+  max-width: 600px;
+  min-width: 350px;
+  margin: 0 auto;
+  vertical-align: middle;
+  height: 42px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding-left: 10px;
+  border-style: solid;
+  border-color: lightgray;
+  border-bottom-width: 2px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  font-size: 16px;
+}
+
+.wrapper-content {
+  padding-bottom: 25px;
+}
+
+.wrapper-content-output {
+  padding-bottom: 25px;
+}
+
+.button-holder, 
+.option-holder {
+  max-width: 400px;
+  min-width: 350px;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+h1,
+h2 {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  vertical-align: middle;
+  font-family: 'Shrikhand', cursive;
+  color: rgb(251, 6, 15);
+  font-size: 58px;
+  text-align: center;
+}
+
+#output-area {
+  border-radius: 10px;
+  max-width: 650px;
+  width: 90%;
+  margin: 25px auto;
+  vertical-align: middle;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .82);
+  border-top-color: lightgrey;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: lightgrey;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+}
+
+.footer-area,
+.footer-area-links {
+  font-family: 'Shrikhand', cursive;
+  color: rgb(251, 6, 15);
+  height: 50px;
+}
+.errMsg {
+  color: rgb(247, 44, 44);
+}
+
+.onHide {
+  visibility: hidden;
+}
+
+.onShow {
+  visibility: visible;
+}
+
+.row-boggler,
+.row-about,
+.row-solution {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.boggler-board,
+.about-box {
+  background-color: rgba(250, 251, 252, .40);
+  border-radius: 10%;
+  margin: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  max-width: 300px;
+  text-align: center;
+  margin: 20px auto;
+  vertical-align: middle;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-box {
+  text-align: left;
+  max-width: 650px;
+  width: 90%;
+  padding-left: 10px;
+  border-radius: 10px;
+  padding-right: 10px;
+  background-color: rgba(255, 255, 255, .82);
+}
+
+.main-container {
+  text-align: center;
+  min-height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.nav {
+  display: inline;
+}
+
+.nav-item {
+  float: right;
+  margin: 0 10;
+  color: black;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid #ffffff;
+}
+
+.nav-item-selected {
+  border-bottom: 3px solid rgb(196, 62, 62);
+}
+
+.in-text-link {
+  color: rgb(88, 88, 224);
+}
+
+a, a:hover {
+  color: black;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.boggle-tile, 
+.boggle-tile-error,
+.boggle-tile-path-found,
+.boggle-tile-path-not-found,
+.boggle-tile-path,
+.boggle-tile-selected {
+  width: 65px;
+  margin: 3px;
+  border: 0px;
+  text-align: center;
+  border-radius: 30%;
+  height: 65px;
+  border-style: solid;
+  border-color: lightgray;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  font-weight: 800;
+  font-size: 1.75em;
+}
+
+.boggle-tile-path-found {
+  background-color: rgba(0, 255, 136, 0.619);
+}
+
+.boggle-tile-path {
+  background-color: rgb(255, 163, 163);
+}
+
+.boggle-tile-error {
+  background-color: rgba(247, 44, 44, 0.619)
+}
